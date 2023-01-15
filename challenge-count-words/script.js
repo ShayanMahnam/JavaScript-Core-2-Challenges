@@ -1,10 +1,32 @@
 function calculateWords(chapterOfABook) {
-  const wordCount = {};
+  const words = chapterOfABook.split(" ");
+  //Remove punctuation
+  //.replace(/[^\w\s]/gi, "")
+  //.toLowerCase()
+  // split the sentence into an array of words
+  const wordCounts = {}; // object to store the counts of each word
 
-  // Write your code in here
+  for (const word of words) {
+    if (word === "") {
+      return {};
+    }
+    if (!wordCounts.hasOwnProperty(word)) {
+      wordCounts[word] = 0;
+    }
+    wordCounts[word]++;
+  }
 
-  return wordCount;
+  return wordCounts;
 }
+// for sorting 
+// const sortable = [];
+  // for (const word in wordCounts) {
+  //   sortable.push([word, wordCounts[word]]);
+  // }
+  // sortable.sort(function(a, b) {
+  //   return b[1] - a[1];
+  // });
+  // return sortable;
 
 calculateWords(getDraculaChapterOne());
 
