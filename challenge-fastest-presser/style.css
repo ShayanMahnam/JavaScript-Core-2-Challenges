@@ -1,3 +1,76 @@
 body {
   background-color: white;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+#startButton {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: .9rem;
+  border: none;
+  border-radius: 50px;
+}
+
+#resetButton{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: .9rem;
+  border: none;
+  border-radius: 50px;
+}
+
+#timeInput {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#sCount {
+  font-size: 30px;
+  color: blue;
+}
+
+#lCount{
+  font-size: 30px;
+  color: pink;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#result {
+  font-size: 40px;
+  color: white;
+  padding: 2rem;
+  
+background: rgba(21, 11, 11, 0.44);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.3px);
+-webkit-backdrop-filter: blur(11.3px);
+border: 1px solid rgba(21, 11, 11, 0.3);
+}
+
+#timeCounter {
+  font-size: 20px;
+  color: black;
+}

@@ -5,19 +5,39 @@
       href="https://fonts.googleapis.com/css?family=Chivo:900i|Muli|Titillium+Web"
       rel="stylesheet"
     />
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="/challenge-fastest-presser/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <title>Fastest Presser Game</title>
   </head>
 
   <body>
-    <div class="content"></div>
-  </body>
+    <div class="content">
+      <div class="header">
+          <h1>Set your Time!!!</h1>
+          <input id="timeInput" type="number">
+      </div>
+      
+      <div class="btns">
+          <button id="startButton">Start Game!</button>
+          <button id="resetButton">Reset Game</button>
+      </div>
 
-  <script src="script.js"></script>
+      
+      <p id="timeCounter">Time remaining:</p>
+      <div class="players">
+              <div id="sCount">Player s: 0</div>
+              <div id="lCount">Player l: 0</div>
+      </div>
+      
+      <div id="result">who's going to win???</div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+  <script src="/challenge-fastest-presser/script.js"></script>
 </html>
