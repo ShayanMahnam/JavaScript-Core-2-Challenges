@@ -20,7 +20,7 @@ function createTweet(event) {
       let newList = document.createElement("li");
       newList.id = `tweet-${tweetId}`;
       tweetId++;
-      tweetPlace.appendChild(newList);
+      tweetPlace.prepend(newList);
 
       // user detailes
       let userDetails = document.createElement("div");
